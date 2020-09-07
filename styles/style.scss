@@ -1,0 +1,33 @@
+// モバイルファースト
+@import 'breakpoints.base';
+
+// スマホを傾けた時(ランドスケープ)
+@media (min-width: 480px) {
+  @import 'breakpoints/480up';
+}
+
+// タブレット(ipadなど)
+@media (min-width: 600px) {
+  @import 'breakpoints/600up';
+}
+
+// タブレットを傾けた時(ランドスケープ),小さいデスクトップ
+@media (min-width: 960px) {
+  @import 'breakpoints/960up';
+}
+
+// デスクトップ
+@media (min-width: 1280px) {
+  @import 'breakpoints/1280up';
+}
+
+// retinaディスプレイ
+@media (min-resolution: 192dpi)
+      ,(-webkit-min-device-pixel-ratio: 2) {
+        @import 'breakpoints/2x';
+}
+
+// 印刷時
+@media print {
+  @import 'breakpoints/print';
+}

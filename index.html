@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Example Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Example Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello GitHub.io !</h1>
+  <h1>Portfolio</h1>
+  <div id="global-container">
+    <div id="container">
+      <div class="mobile-menu__cover"></div>
+      <header class="header">
+        <button class="mobile-menu__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+    </div>
+    <nav class="mobile-menu">
+      <ul class="mobile-menu__main">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">
+            <span class="main-title">Home</span>
+            <span class="sub-title">ホーム</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="">
+            <span class="main-title">About</span>
+            <span class="sub-title">私について</span>
+          </a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="">
+            <span class="main-title">Gallery</span>
+            <span class="sub-title">ギャラリー</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+<script src="main.js"></script>
 </body>
 </html>
