@@ -180,7 +180,7 @@ body {
   padding-bottom: 80px !important;
 }
 
-.content-width, .header__inner {
+.content-width, .header__inner, .content {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;

@@ -114,4 +114,5 @@ body {
 
 .content {
 	padding-top: $navHeight;
+	@extend .content-width;
 }
