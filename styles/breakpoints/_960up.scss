@@ -31,3 +31,17 @@ Stylesheet: 960px以上のモニタで適用
 	padding-bottom: 150px !important;
 }
 
+// ナビゲーション　スタイル
+.header {
+	&__nav {
+		// desktop表示時に表示する
+		display: block;
+	}
+}
+
+.mobile-menu {
+	&__btn {
+		// mobileメニューのボタンを表示しない
+		display: none;
+	}
+}

@@ -6,22 +6,40 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Example Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="vendors/normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/vendors/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <h1>Portfolio</h1>
   <div id="global-container">
     <div id="container">
+      <!-- nav menu -->
       <div class="mobile-menu__cover"></div>
       <header class="header">
-        <button class="mobile-menu__btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <div class="header__inner">
+          <!-- desktop表示時のナビゲーション -->
+          <nav class="header__nav">
+            <ul class="header__ul">
+              <li class="header__li"><a href="#">Home</a></li>
+              <li class="header__li"><a href="#">About</a></li>
+              <li class="header__li"><a href="#">Gallery</a></li>
+            </ul>
+          </nav>
+          <!-- ハンバーガーメニュー -->
+          <button class="mobile-menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </header>
+
+      <div class="content">
+        <h1>content</h1>
+      </div>
     </div>
+
+
+    <!-- mobile表示時のナビゲーション -->
     <nav class="mobile-menu">
       <ul class="mobile-menu__main">
         <li class="mobile-menu__item">

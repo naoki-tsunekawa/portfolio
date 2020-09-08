@@ -49,3 +49,69 @@ body {
 	margin: 0 auto;
 	max-width: $contentMaxWidth;
 }
+
+#container {
+	position: relative;
+	height: 100vh;
+	z-index: 2;
+	transition: all 0.5s;
+}
+
+.main-title {
+	font-weight: 600;
+	font-size: 25px;
+}
+.sub-title {
+	display: block;
+	font-size: 14px;
+	color: $cSubTitle;
+}
+
+// ナビゲーション　スタイル
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background-color: transparent;
+	height: $navHeight;
+	display: flex;
+	// justify-content: flex-end;
+	align-items: center;
+	z-index: 100;
+
+	&__nav {
+		// mobile表示時は非表示
+		display: none;
+	}
+
+	&__ul {
+		display: flex;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	&__li {
+		margin-left: 20px;
+
+		& > a {
+			color: $cBlack;
+			text-decoration: none !important;
+			text-transform: uppercase;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		@extend .content-width;
+	}
+}
+
+.content {
+	padding-top: $navHeight;
+}
