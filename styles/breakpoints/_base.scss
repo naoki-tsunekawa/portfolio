@@ -3,3 +3,49 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
+body {
+	// web font
+	font-family: 'Kameron','Noto Sans JP', sans-serif;
+}
+
+// font utility class
+.font-sm {
+	font-size: 14px;
+}
+
+.font-md {
+	font-size: 17px;
+}
+
+.font-lr {
+	font-size: 17px;
+}
+
+.font-lg {
+	font-size: 25px;
+}
+
+// margin utility class
+.mb-sm {
+	margin-bottom: 16px !important;
+}
+
+.mb-lg {
+	margin-bottom: 80px !important;
+}
+
+// padding utility class
+.pb-sm {
+	padding-bottom: 16px !important;
+}
+
+.pb-lg {
+	padding-bottom: 80px !important;
+}
+
+// 左右のスペースを統一
+.content-width {
+	width: 90%;
+	margin: 0 auto;
+	max-width: $contentMaxWidth;
+}

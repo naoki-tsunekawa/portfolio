@@ -1,5 +1,7 @@
+@import 'variables';
+
 // モバイルファースト
-@import 'breakpoints.base';
+@import 'breakpoints/base';
 
 // スマホを傾けた時(ランドスケープ)
 @media (min-width: 480px) {
