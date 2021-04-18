@@ -144,24 +144,28 @@
 Stylesheet: ベーススタイル
 
 ******************************************************************/
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: 'Kameron','Noto Sans JP', sans-serif;
+  font-family: 'Dosis','Noto Sans JP', sans-serif;
 }
 
 .font-sm {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .font-md {
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 .font-lr {
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 .font-lg {
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 .mb-sm {
@@ -180,7 +184,7 @@ body {
   padding-bottom: 80px !important;
 }
 
-.content-width, .header__inner, .content {
+.content-width, .header__inner {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -196,12 +200,12 @@ body {
 
 .main-title {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 .sub-title {
   display: block;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #535353;
 }
 
@@ -264,6 +268,50 @@ body {
   padding-top: 100px;
 }
 
+.Logo {
+  width: 100%;
+  padding: 300px 0;
+  text-align: center;
+}
+
+.Logo .name_text {
+  letter-spacing: 4px;
+  font-size: 4rem;
+}
+
+.Logo .job_text {
+  letter-spacing: 4px;
+  font-size: 2rem;
+}
+
+.skills_container {
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 500px;
+  padding-top: 100px;
+}
+
+.skills_wrapper {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skill {
+  width: 200px;
+  height: 200px;
+  margin: 0 45px 50px 45px;
+  background-color: blue;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
@@ -287,16 +335,16 @@ Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
   .font-sm {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   .font-md {
-    font-size: 19px;
+    font-size: 1.9rem;
   }
   .font-lr {
-    font-size: 23px;
+    font-size: 2.3rem;
   }
   .font-lg {
-    font-size: 36px;
+    font-size: 3.6rem;
   }
   .mb-lg {
     margin-bottom: 150px !important;
@@ -306,6 +354,9 @@ Stylesheet: 960px以上のモニタで適用
   }
   .header__nav {
     display: block;
+  }
+  .header__ul {
+    font-size: 1.5rem;
   }
   .mobile-menu__btn {
     display: none;

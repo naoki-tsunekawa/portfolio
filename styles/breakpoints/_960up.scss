@@ -4,38 +4,39 @@ Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
 
-// font utility class
 .font-sm {
-	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 .font-md {
-	font-size: 19px;
+	font-size: 1.9rem;
 }
 
 .font-lr {
-	font-size: 23px;
+	font-size: 2.3rem;
 }
 
 .font-lg {
-	font-size: 36px;
+	font-size: 3.6rem;
 }
 
-// margin utility class
 .mb-lg {
 	margin-bottom: 150px !important;
 }
 
-// padding utility class
 .pb-lg {
 	padding-bottom: 150px !important;
 }
 
-// ナビゲーション　スタイル
+// ナビゲーション　
 .header {
 	&__nav {
 		// desktop表示時に表示する
 		display: block;
+	}
+
+	&__ul{
+		font-size: 1.5rem;
 	}
 }
 
