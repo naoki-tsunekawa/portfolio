@@ -5,6 +5,7 @@ Stylesheet: ベーススタイル
 ******************************************************************/
 html {
 	font-size: 62.5%;
+	color: $cBlack;
 }
 
 body {
@@ -84,6 +85,7 @@ body {
 	align-items: center;
 	z-index: 100;
 
+
 	&__nav {
 		// mobile表示時は非表示
 		display: none;
@@ -117,13 +119,14 @@ body {
 
 .content {
 	padding-top: $navHeight;
-	// @extend .content-width;
 }
 
 .Logo {
 	width: 100%;
 	padding: 300px 0;
 	text-align: center;
+	background: linear-gradient(-45deg, rgb(0, 115, 255), rgba(0, 255, 242, 0.8)), fixed;
+
 
 	.name_text{
 		letter-spacing: 4px;
@@ -136,10 +139,37 @@ body {
 	}
 }
 
+// SubTitle
+.sub_title_text {
+	font-size: 3rem;
+	text-align: center;
+	margin: 60px;
+}
+
+
+// PROFILE
+.profile_container {
+	// width: ;
+}
+
+.profile_wrapper {
+	// display: flex;
+}
+
+.profile_img {
+	width: 300px;
+	height: 300px;
+	margin: 10px auto;
+	background-color: gray;
+	border-radius: 100%;
+}
+
+
+// SKILL
 .skills_container	{
 	background-color: #f9f9f9;
 	width: 100%;
-	height: 500px;
+	// height: 500px;
 	padding-top: 100px;
 }
 
@@ -154,8 +184,21 @@ body {
 }
 
 .skill {
-	width: 200px;
-	height: 200px;
+	width: 300px;
+	height: 300px;
 	margin: 0 45px 50px 45px;
-	background-color: blue;
+	background-color: gainsboro;
+	border: $cBlack 1px solid;
+	letter-spacing: 1px;
+	border-radius: 20%;
+}
+
+.skill_contents_title {
+	font-size: 2rem;
+	text-align: center;
+	margin: 10px;
+}
+
+.under-line {
+	background: linear-gradient(transparent 70%, #7ed6df 70%);
 }
