@@ -12,6 +12,7 @@ $cMenuOpen: $cBlack;
 		border: none;
 		outline: none !important;
 		cursor: pointer;
+		margin-right: 50px;
 
 		& > span {
 			background-color: $cMenuClose;
